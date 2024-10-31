@@ -1,8 +1,8 @@
 <!--
 Requirements
 [  ] Google Font OR Uploaded Font
-[  ] font-size OR font-style 
-[  ] Five CSS Rules
+[Yes] font-size OR font-style 
+[Yes] Five CSS Rules
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
@@ -14,17 +14,96 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 4 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      h2 {
+        font-size: 22px;
+      }
 
-<head>
-  <title>Unit 4 Project</title>
-  <meta charset="utf-8">
-  <style>
+      div {
+        border-bottom: 5px solid;
+        margin-top: 5px;
+        width: 70%;
+        text-align: center;
+      }
 
-  </style>
-</head>
-<body>
+      .arrow {
+        border: solid black;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 4px;
+      }
 
- 
+      #right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
 
-</body>
+      #left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        position: left;
+      }
+
+      .line {
+        display: flex;
+        justify-content: center;
+      }
+
+      #simple-line {
+        margin-left: 12%;
+      }
+
+      #all-out {
+        margin-left: 65%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How to Build a Jewlery Collection</h1>
+
+    <h3>
+      A guide to creating your dream jewlery ensemble from a simple look to an
+      elaborate one!
+    </h3>
+
+    <h2>
+      Step 1: Basics <br />
+      Step 2: Stacking <br />
+      Step 3: Gemstones, Colors, Chunky, Metal Mixing
+    </h2>
+
+    <img
+      id="simple-line"
+      src="https://cdn.shopify.com/s/files/1/0459/0744/3880/files/layered-set-sun-necklace_1.webp?v=1713777090"
+      width="100"
+      height="125"
+    />
+
+    <img
+      id="all-out"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfGAnPFyfUqOv7X8H1VzcJDV-EntTq72wqWg&s"
+      width="100"
+    />
+
+    <center class="line">
+      <i class="arrow" id="left"></i>
+      <div></div>
+      <i class="arrow" id="right"></i>
+    </center>
+    <br />
+
+    <h2>Step 1: Basics</h2>
+    <p>First, you want to figure out if you prefer gold or silver jewlery. After this, target finding pieces that are simple and low key. These are things like simple chain necklaces or single charm ones, hoops, plain rings and bands and simple chain or woven bracelets. For a lot of people, this is the extent of complexity they want their jewlery to be which is totally fine. Everyone is different and a look composed of these items can look super pretty and good for everyday!</p>
+    
+    <h2>
+      Step 2: Stacking
+    </h2>
+    <p>
+    Many people like to put several necklaces together and mix and match all of their jewlery. The best way to do this is to balance between lenghts and complexity of the pieces. You want a good balance of the more plain jewlery like a chain necklace with the more chunky and attention grabbing pieces. 
+    </p>
+    
+  </body>
 </html>
