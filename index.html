@@ -1,30 +1,276 @@
 <!--
 Requirements
-[  ] Google Font OR Uploaded Font
-[  ] font-size OR font-style 
-[  ] Five CSS Rules
-[  ] Three Images
+[Yes] Google Font OR Uploaded Font
+[Yes] font-size OR font-style 
+[Yes] Five CSS Rules
+[Yes] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a Static Background Image
-[ no ] Feature 2 - Use a unique border-radius
+[Yes] Feature 2 - Use a unique border-radius
 [ no ] Feature 3 - Use width and margin CSS Properties
 [ no ] Feature 4 - Include at least one more additional HTML page
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Londrina+Sketch&family=Rubik+Puddles&family=Sue+Ellen+Francisco&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <title>Unit 4 Project</title>
-  <meta charset="utf-8">
-  <style>
+    <title>Unit 4 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      div {
+        border-bottom: 5px solid;
+        margin-top: 5px;
+        width: 70%;
+        text-align: center;
+        color: rgb(116, 9, 56);
+      }
 
-  </style>
-</head>
-<body>
+      .arrow {
+        border: solid rgb(116, 9, 56);
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 4px;
+      }
 
- 
+      #right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
 
-</body>
+      #left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        position: left;
+      }
+
+      .line {
+        display: flex;
+        justify-content: center;
+      }
+
+      #simple-line {
+        margin-left: 9%;
+      }
+
+      #all-out {
+        margin-left: 57%;
+      }
+
+      h1 {
+        font-family: "Rubik Puddles", system-ui;
+        font-size: 34px;
+        color: rgb(116, 9, 56);
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "Londrina Sketch", sans-serif;
+        font-size: 28px;
+        color: rgb(175, 23, 64);
+      }
+
+      p {
+        font-family: "Tinos", serif;
+        color: rgb(255, 255, 255);
+      }
+
+      body {
+        background-color: rgb(222, 124, 125);
+        width: 60%;
+        margin: auto;
+      }
+
+      h3 {
+        font-family: "Chewy", system-ui;
+        color: rgb(204, 43, 82);
+        text-align: center;
+      }
+
+      img {
+        border: 5px solid rgb(116, 9, 56);
+        border-radius: 30px;
+      }
+
+      .links {
+        color: rgb(175, 23, 64);
+      }
+
+      mark:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(116, 9, 56);
+      }
+
+      mark {
+        background-color: rgb(222, 124, 125);
+        color: rgb(175, 23, 64);
+      }
+      
+      #end {font-size: 1.70em;}
+      
+      #ideas {font-size: 2.50em;}
+      
+    </style>
+  </head>
+  <body>
+    <h1>How to Build a Jewlery Collection</h1>
+
+    <h3>
+      A guide to creating your dream jewlery ensemble ranging from a simple look to an elaborate one!
+    </h3>
+
+    <h2 class="links">
+      <a class="links" href="#basics"><mark>Step 1: Basics</mark></a> <br />
+      <a class="links" href="#stacking"><mark>Step 2: Stacking</mark></a> <br />
+      <a class="links" href="#three"
+        ><mark>Step 3: Gemstones, Colors, Chunky, Metal Mixing</mark></a
+      >
+    </h2>
+
+   <a href="#basics"><img
+      id="simple-line"
+      src="https://cdn.shopify.com/s/files/1/0459/0744/3880/files/layered-set-sun-necklace_1.webp?v=1713777090"
+      width="100"
+      height="125"
+    /></a> 
+
+    <a href="#three"><img
+      id="all-out"
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/b1ea0c402bef4626f875195bde18103a.jpg?v=1730999098545"
+      width="100"
+    /></a>
+    
+    <center class="line">
+      <i class="arrow" id="left"></i>
+      <div></div>
+      <i class="arrow" id="right"></i>
+    </center>
+    <br />
+
+    <h2 id="basics">Step 1: Basics</h2>
+    <p>
+      First, you want to figure out if you prefer gold or silver jewlery. After
+      this, target finding pieces that are simple and low key. These are things
+      like simple chain necklaces or single charm ones, hoops, plain rings and
+      bands and simple chain or woven bracelets. For a lot of people, this is
+      the extent of complexity they want their jewlery to be which is totally
+      fine. Everyone is different and a look composed of these items alone can look super pretty and good for everyday!
+    </p>
+    <br>
+
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/silver-doodle-flower-hoop-earrings.jpg?v=1730951133622"
+      width="150"
+    />
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/140d5bee12aaac6588042824f10920fc.jpg?v=1730951164007"
+      width="150"
+    />
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/images.jpeg?v=1730951192027"
+      width="175"
+    />
+    <h2 id="stacking">Step 2: Stacking</h2>
+    <p>
+      Many people like to put several necklaces together and mix and match all
+      of their jewlery. The best way to do this is to balance between lenghts
+      and complexity of the pieces. You want a good ratio of the more plain
+      pieces, like a chain necklace, to the more chunky and attention grabbing pieces.
+    </p>
+    <br>
+    
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/40f780d4da94821b3718d618fbcddcab.jpg?v=1730951168715"
+      width="150"
+    />
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/63479d7495475e4219282b7deb64e0a8.jpg?v=1730951157842"
+      width="175"
+    />
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/silver-layered-necklaces.jpg.webp?v=1730951146949"
+      width="185"
+    />
+
+    <h2 id="three">Step 3: Gemstones, Colors, Chunky, Metal Mixing</h2>
+    <p>
+      If you want to create a more bold look, you can utilize mixing metals,
+      wearing jewlery with gems or beads of different colors and chunkier
+      jewlery. This look can also include a lot of stacking. Even if you want a simple everday look, you can also showcase a more stacked look by having some necklaces or earrings that you can add on later in the day to dress up your outfit for going out at night.
+    </p>  
+  <br>
+    
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/9a67209ed1d2619e1f28643fd2cde57f.jpg?v=1730951178344"
+      width="160"
+    />
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/CB845_YL5433_m.avif?v=1730951152901"
+      width="150"
+    />
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/bead33208a6760ea0f0d5c59514f817d.jpg?v=1730951186316"
+      width="142"
+    />
+    <img
+      src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/mens-jewelry-gq-april-2021-01.jpg.webp?v=1730951231987"
+      width="150"
+    />
+    <br />
+    <br />
+    
+    <h2 id="ideas">
+      Some more ideas with links
+    </h2>
+    <br>
+    <a href="https://www.freepeople.com/shop/luca-extreme-layer-necklace/?color=050&epik=dj0yJnU9MjBsZ2tWdE4yT1dHME1YdW9iSW5laXhrRFlYQnE2dE0mcD0wJm49LS1CZWZvYzBmU1BhS2pJNVhLTFRVUSZ0PUFBQUFBR2NzODRj&size=One+Size&type=REGULAR&quantity=1"><img src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/b1ea0c402bef4626f875195bde18103a.jpg?v=1730999098545" width="200">
+    </a>
+    <a href="https://www.etsy.com/listing/1630043656/silver-dangling-chain-cz-studs?epik=dj0yJnU9cXpVbWVhNzRnd0wyVks2Ykx4NWJSZ1Azd2xHa3JmSm8mcD0wJm49WmRPbFVkazl3aUtsUWtrVGNDYUIyUSZ0PUFBQUFBR2NzOGxz"><img src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/c748041346e9a35085575764183045f9.jpg?v=1730999077406" width="200"></a>
+    <a href="https://www.etsy.com/listing/1800624322/pearl-bracelet-ladies-quartz-watch?ref=sold_out_ad-6&pro=1&frs=1&plkey=6a4d25b262089bcf2256229901d784d9cd2a980c%3A1800624322"><img src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/il_1588xN.6422559163_n7g7.jpg.avif?v=1730999070282" width="200">
+    </a>
+   <a href="https://www.selfieleslie.com/products/south-pacific-shell-starfish-multi-layer-necklace-gold?epik=dj0yJnU9VnBpYklta2VLNURPVzNoTF9YYzNNenFJTGZ4QUV1WTkmcD0wJm49OEQ4YWc5M0h0cUVMS0ZxSTV1X29RUSZ0PUFBQUFBR2NzOTdN"><img src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/images-1.jpeg?v=1730999084912" width="200">
+    </a>
+    <a href="https://www.urbanoutfitters.com/shop/clara-charm-necklace?category=all-jewelry&color=070&type=REGULAR&size=ONE+SIZE&quantity=1"><img src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/94740529_007_d.webp?v=1731000806690" width="200">
+    </a>
+    <a href="https://www.urbanoutfitters.com/shop/spiral-statement-ring-set?category=all-jewelry&color=070&type=REGULAR&quantity=1"><img src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/84237635_070_b.webp?v=1731000679875" width="200">
+    </a>
+    <a href="https://www.lyst.com/jewelry/free-people-thea-extreme-layer-necklace-2/"><img src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/images.jpeg?v=1730999089238" width="200">
+    </a>
+    <a href="https://www.urbanoutfitters.com/shop/blooberry-heart-baby-necklace?category=all-jewelry&color=045&type=REGULAR&size=ONE+SIZE&quantity=1"><img src="https://cdn.glitch.global/c27e9981-0f78-4cd4-9e43-d1ae34560cfe/67643452_045_m.webp?v=1731035409265" width="200">
+    </a>
+    <br>
+    <br>
+    
+    <h3 id="end">
+      Overall, jewlery is a great way to express yourself, complete an outfit
+      and feel confident!
+    </h3>
+    <br />
+    <br />
+  </body>
 </html>
